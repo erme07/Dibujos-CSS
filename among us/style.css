@@ -9,6 +9,9 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
+    /* background: linear-gradient(0deg, rgba(0,0,0,1) 30%, rgba(130,18,11,1) 50%, rgba(0,0,0,1) 70%); */
+    background-color: antiquewhite;
+    
 }
 
 .tripulante{
@@ -133,4 +136,14 @@ body{
     border-radius: 50%;
     width: 145px;
     height: 200px;
+}
+.sombra{
+    position: absolute;
+    width: 240px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.377);
+    border-radius: 50%;
+    bottom: 0;
+    left: -30px;
+    z-index: -1;
 }
