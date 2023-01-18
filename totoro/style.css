@@ -11,10 +11,99 @@ body{
 }
 .totoro{
     width: 300px;
-    height: 400px;
+    height: 440px;
+    position: relative;
+    /* background-color: antiquewhite; */
+}
+.cabeza{
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    width: 280px;
+    height: 196px;
+    border: 2px solid black;
+    border-bottom: none;
+    background-color: white;
+    border-radius: 45% 45% 0% 0% / 100% 100% 0% 0%;
+    z-index: 1;
+}
+.cara{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 30px;
+}
+.ojo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid black;
     position: relative;
 }
-
+.ojo::before{
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    border-radius: 50%;
+}
+.nariz{
+    width: 40px;
+    height: 8px;
+    background-color: black;
+    border-radius: 50% 50% 50% 50% / 25% 25% 75% 75% ;
+    position: relative;
+}
+.nariz::before{
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    width: 50px;
+    height: 10px;
+    border-top: 2px solid black;
+    border-radius: 50%;
+}
+.nariz::after{
+    content: "";
+    position: absolute;
+    bottom: -41px;
+    left: 12px;
+    width: 16px;
+    height: 10px;
+    border-top: 2px solid black;
+    border-radius: 50%;
+}
+.brazos{
+    position: absolute;
+    top: 55px;
+    left: -20px;
+    width: 340px;
+    height: 270px;
+    border: 2px solid black;
+    border-radius: 50% 50% 8% 8% / 80% 80% 18% 18% ;
+}
+.brazos::before{
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 18px;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    z-index: 1;
+}
 .abdomen{
     position: absolute;
     bottom: 10px;
@@ -24,15 +113,17 @@ body{
     background-color: white;
     border-radius: 50%;
     left: 5px;
-    z-index: 1;
+    z-index: 2;
 }
 .pierna{
     position: absolute;
     bottom: 0;
     width: 150px;
     height: 250px;
+    background-color: white;
     border: 2px solid black;
     border-top: none;
+    z-index: 1;
 }
 
 .pierna--izq{
