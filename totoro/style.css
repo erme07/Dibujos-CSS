@@ -17,15 +17,50 @@ body{
 }
 .cabeza{
     position: absolute;
-    top: 0px;
+    top: 10px;
     left: 10px;
     width: 280px;
-    height: 196px;
+    height: 220px;
     border: 2px solid black;
     border-bottom: none;
-    background-color: white;
-    border-radius: 45% 45% 0% 0% / 100% 100% 0% 0%;
+    background-color: #a38e84;
+    border-radius: 42% 42% 0% 0% / 100% 100% 0% 0%;
     z-index: 1;
+}
+.oreja{
+    position: absolute;
+    transform: rotate(-12deg);
+    top: -78px;
+    left: 58px;
+    width: 40px;
+    height: 90px;
+    border: 2px solid black;
+    background-color: #a38e84;
+    border-radius: 50% 50% 40% 40% / 80% 80% 10% 10%;
+    z-index: 1;
+}
+.oreja--der{
+    left: unset;
+    right: 58px;
+    transform: rotate(12deg);
+}
+.oreja::before{
+    content: "";
+    position: absolute;
+    top: 82px;
+    left: 7px;
+    width: 22px;
+    height: 20px;
+    border: 2px solid black;
+    background-color: #a38e84;
+    border-top: none;
+    border-bottom: none;
+    transform: skew(0deg, -11deg);
+}
+.oreja--der::before{
+    transform: skew(0deg, 11deg);
+    left: 5px;
+    top: 83px;
 }
 .cara{
     position: absolute;
@@ -38,27 +73,28 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    padding: 0 30px;
+    padding: 0 45px;
 }
 .ojo{
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
+    background-color: white;
     border: 2px solid black;
     position: relative;
 }
 .ojo::before{
     content: "";
     position: absolute;
-    top: 9px;
-    left: 9px;
-    width: 18px;
-    height: 18px;
+    top: 8px;
+    left: 8px;
+    width: 15px;
+    height: 15px;
     background-color: black;
     border-radius: 50%;
 }
 .nariz{
-    width: 40px;
+    width: 35px;
     height: 8px;
     background-color: black;
     border-radius: 50% 50% 50% 50% / 25% 25% 75% 75% ;
@@ -77,12 +113,13 @@ body{
 .nariz::after{
     content: "";
     position: absolute;
-    bottom: -41px;
-    left: 12px;
+    bottom: -47px;
+    left: 9px;
     width: 16px;
-    height: 10px;
+    height: 15px;
     border-top: 2px solid black;
     border-radius: 50%;
+    transform: rotate(-16deg);
 }
 .brazos{
     position: absolute;
@@ -91,6 +128,7 @@ body{
     width: 340px;
     height: 270px;
     border: 2px solid black;
+    background-color: #a38e84;
     border-radius: 50% 50% 8% 8% / 80% 80% 18% 18% ;
 }
 .brazos::before{
@@ -100,7 +138,7 @@ body{
     left: 18px;
     width: 300px;
     height: 300px;
-    background-color: rgb(255, 255, 255);
+    background-color: #a38e84;
     border-radius: 50%;
     z-index: 1;
 }
@@ -110,7 +148,7 @@ body{
     width: 290px;
     height: 290px;
     border: 2px solid black;
-    background-color: white;
+    background-color: #e7e0ac;
     border-radius: 50%;
     left: 5px;
     z-index: 2;
@@ -120,7 +158,7 @@ body{
     bottom: 0;
     width: 150px;
     height: 250px;
-    background-color: white;
+    background-color: #a38e84;
     border: 2px solid black;
     border-top: none;
     z-index: 1;
