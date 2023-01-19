@@ -6,6 +6,7 @@
 :root{
     --colorPelo: #6c6a5a;
     --colorPeloClaro: #e7e0ac;
+    --colorGarra: #313853;
 }
 body{
     height: 100vh;
@@ -102,15 +103,16 @@ body{
 .nariz{
     width: 35px;
     height: 8px;
-    background-color: black;
+    background-color: var(--colorGarra);
+    border: 2px solid black;
     border-radius: 50% 50% 50% 50% / 25% 25% 75% 75% ;
     position: relative;
 }
 .nariz::before{
     content: "";
     position: absolute;
-    top: -7px;
-    left: -7px;
+    top: -10px;
+    left: -10px;
     width: 50px;
     height: 10px;
     border-top: 2px solid black;
@@ -179,7 +181,7 @@ body{
     top: 55px;
     left: -20px;
     width: 340px;
-    height: 270px;
+    height: 265px;
     border: 2px solid black;
     background-color: var(--colorPelo);
     border-radius: 50% 50% 8% 8% / 80% 80% 18% 18% ;
@@ -195,11 +197,43 @@ body{
     border-radius: 50%;
     z-index: 1;
 }
+.garra{
+    position: absolute;
+    left: 2px;
+    top: 240px;
+    width: 8px;
+    height: 30px;
+    border: 2px solid black;
+    background-color: var(--colorGarra);
+    transform: skew(0deg, 40deg);
+    border-radius: 100% 0% 20% 80% / 0% 0% 100% 100%;
+    z-index: -1;
+}
+.garra::before{
+    content: "";
+    position: absolute;
+    right: -12px;
+    width: 7px;
+    height: 30px;
+    border: 2px solid black;
+    background-color: var(--colorGarra);
+    border-radius: 100% 0% 20% 80% / 0% 0% 100% 100%;
+}
+.garra:last-child{
+    left: unset;
+    right: 2px;
+    transform: skew(0deg, -40deg);
+    border-radius: 100% 0% 80% 20% / 0% 0% 100% 100% ;
+}
+.garra:last-child::before{
+    border-radius: 100% 0% 80% 20% / 0% 0% 100% 100% ;
+    left: -12px;
+}
 .abdomen{
     position: absolute;
-    bottom: 10px;
+    bottom: 5px;
     width: 290px;
-    height: 290px;
+    height: 300px;
     border: 2px solid black;
     background-color: var(--colorPeloClaro);
     border-radius: 50%;
@@ -276,9 +310,9 @@ body{
 
 .pierna--izq{
     left: 0;
-    border-radius: 12% 0% 6% 45% / 40% 0% 4% 55%;
+    border-radius: 12% 0% 3% 45% / 40% 0% 3% 55%;
 }
 .pierna--der{
     right: 0;
-    border-radius: 0% 12% 45% 6% / 0% 40% 55% 4% ;
+    border-radius: 0% 12% 45% 3% / 0% 40% 55% 3% ;
 }
