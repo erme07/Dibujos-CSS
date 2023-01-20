@@ -3,28 +3,32 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+:root{
+    --colorVisor: #9cc5d5;
+    --colorVisorSombra: #49626e;
+    --colorMain: #feae14;
+    --colorSombra: #e96b23;
+}
 body{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    /* background: linear-gradient(0deg, rgba(0,0,0,1) 30%, rgba(130,18,11,1) 50%, rgba(0,0,0,1) 70%); */
     background-color: antiquewhite;
-    
+    background: linear-gradient(0deg, rgba(0,0,0,1) 25%, rgba(130,18,11,1) 50%, rgba(0,0,0,1) 75%);
 }
-
 .tripulante{
     width: 200px;
     height: 340px;
     position: relative;
     margin-left: 50px;
+    transform: scale(.7);
 }
 
 .cuerpo{
     position: relative;
     overflow: hidden;
-    background-color: #cd0000;
+    background-color: var(--colorSombra);
     height: 260px;
     width: 200px;
     border-radius: 50% 50% 0% 0% / 30% 30% 0% 69% ;
@@ -32,14 +36,16 @@ body{
     border: 15px solid black;
     border-bottom: none;
 }
-.cuerpo::before{
+.cuerpo::before, .cuerpo::after{
     content: "";
     position: absolute;
+}
+.cuerpo::before{
     bottom: 0;
     left: 60px;
     height: 15px;
     width: 66px;
-    background-color: #cd0000;
+    background-color: var(--colorSombra);
     border-bottom: 15px;
     border-bottom-color: black;
     border-bottom-style: solid;
@@ -47,11 +53,9 @@ body{
     z-index: 1;
 }
 .cuerpo::after{
-    content: "";
-    position: absolute;
     top: -40px;
     right: -50px;
-    background-color: #ff0000;
+    background-color: var(--colorMain);
     height: 240px;
     width: 200px;
     border-radius: 50%;
@@ -67,12 +71,12 @@ body{
 .pie{
     width: 90px;
     height: 70px;
-    background-color: #cd0000;
+    background-color: var(--colorSombra);
     border: 15px solid black;
     border-top: none;
     border-radius: 0% 0% 30px 30px / 0% 0% 35px 35px ;
 }
-.pie--derecho{
+.pie:last-child{
     width: 87px;
     height: 85px;
     margin-top: -26px;
@@ -81,30 +85,30 @@ body{
     border-right-width: 13px;
 }
 
-.ojo{
+.visor{
     position: absolute;
     top: 40px;
     right: -10px;
     width: 150px;
     height: 100px;
     overflow: hidden;
-    background-color: #49626e;
+    background-color: var(--colorVisorSombra);
     border: 15px solid black;
     border-radius: 45px;
 }
-.ojo::before{
+.visor::before, .visor::after{
     content: "";
     position: absolute;
+}
+.visor::before{
     top: -38px;
     right: -20px;
     width: 125px;
     height: 90px;
-    background-color: #9cc5d5;
+    background-color: var(--colorVisor);
     border-radius: 35px;
 }
-.ojo::after{
-    content: "";
-    position: absolute;
+.visor::after{
     top: 7px;
     right: 11px;
     width: 50px;
@@ -118,7 +122,7 @@ body{
     left: -50px;
     width: 80px;
     height: 165px;
-    background-color: #ff0000;
+    background-color: var(--colorMain);
     border: 15px solid black;
     border-right: none;
     border-radius: 40px;
@@ -132,7 +136,7 @@ body{
     position: absolute;
     top: 20px;
     left: -45px;
-    background-color: #cd0000;
+    background-color: var(--colorSombra);
     border-radius: 50%;
     width: 145px;
     height: 200px;
@@ -141,7 +145,7 @@ body{
     position: absolute;
     width: 240px;
     height: 50px;
-    background-color: rgba(0, 0, 0, 0.377);
+    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 50%;
     bottom: 0;
     left: -30px;
