@@ -46,7 +46,7 @@ body{
     border-radius: 50% 50% 40% 40% / 80% 80% 10% 10%;
     z-index: 1;
 }
-.oreja--der{
+.oreja:last-child{
     left: unset;
     right: 58px;
     transform: rotate(12deg);
@@ -64,7 +64,7 @@ body{
     border-bottom: none;
     transform: skew(0deg, -11deg);
 }
-.oreja--der::before{
+.oreja:last-child:before{
     transform: skew(0deg, 11deg);
     left: 5px;
     top: 83px;
@@ -108,25 +108,23 @@ body{
     border-radius: 50% 50% 50% 50% / 25% 25% 75% 75% ;
     position: relative;
 }
-.nariz::before{
+.nariz::before, .nariz::after{
     content: "";
     position: absolute;
+    border-top: 2px solid black;
+    border-radius: 50%;
+}
+.nariz::before{
     top: -10px;
     left: -10px;
     width: 50px;
     height: 10px;
-    border-top: 2px solid black;
-    border-radius: 50%;
 }
 .nariz::after{
-    content: "";
-    position: absolute;
-    bottom: -47px;
+    bottom: -45px;
     left: 9px;
-    width: 16px;
-    height: 15px;
-    border-top: 2px solid black;
-    border-radius: 50%;
+    width: 11px;
+    height: 6px;
     transform: rotate(-16deg);
 }
 
@@ -158,19 +156,19 @@ body{
     top: 22px;
     transform: rotate(-15deg);
 }
-.bigote--der{
+.bigote:last-child{
     left: unset;
     right: 0;
     border-radius: 20% 50%;
     transform: rotate(-15deg);
 }
-.bigote--der::before{
+.bigote:last-child::before{
     left: unset;
     right: 0;
     transform: rotate(10deg);
     border-radius: 20% 50%;
 }
-.bigote--der::after{
+.bigote:last-child::after{
     left: unset;
     right: 0;
     transform: rotate(15deg);
@@ -306,13 +304,81 @@ body{
     border: 2px solid black;
     border-top: none;
     z-index: 1;
+    left: 0;
+    border-radius: 12% 0% 3% 55% / 40% 0% 3% 55%;
 }
 
-.pierna--izq{
-    left: 0;
-    border-radius: 12% 0% 3% 45% / 40% 0% 3% 55%;
-}
-.pierna--der{
+.pierna:last-child{
+    left: unset;
     right: 0;
-    border-radius: 0% 12% 45% 3% / 0% 40% 55% 3% ;
+    border-radius: 0% 12% 55% 3% / 0% 40% 55% 3% ;
+}
+.pie, .pierna:last-child .pie{
+    position: absolute;
+    bottom: -1.1px;
+    width: 50px;
+    height: 18px;
+    border: 2px solid black;
+    border-top: none;
+    background-color: var(--colorPelo);
+    z-index: 1;
+}
+.pie{
+    left: 35px;
+    border-right: none;
+    border-radius: 31% 0% 0% 10% / 82% 0% 0% 10%;
+}
+.pierna:last-child .pie{
+    left: unset;
+    right: 35px;
+    border-left: none;
+    border-radius: 0% 30% 10% 0% / 0% 80% 10% 0% ;
+}
+
+.pezunia{
+    position: absolute;
+    bottom: -1px;
+    left: -20px;
+    width: 38px;
+    height: 7px;
+    border: 2px solid black;
+    background-color: var(--colorGarra);
+    transform: skew(30deg, 0deg) rotate(-18deg);
+    border-radius: 90% 10% 10% 90% / 48% 50% 49% 51%;
+}
+.pezunia::before, .pezunia::after{
+    content: "";
+    position: absolute;
+    border: 2px solid black;
+    background-color: var(--colorGarra);
+    border-radius: 90% 10% 10% 90% / 48% 50% 49% 51%;
+}
+.pezunia::before{
+    bottom: -9px;
+    left: 14px;
+    width: 32px;
+    height: 6px;
+}
+.pezunia::after{
+    bottom: -15px;
+    left: 28px;
+    width: 28px;
+    height: 4px;
+}
+.pierna:last-child .pezunia{
+    left: unset;
+    right: -20px;
+    border-radius: 10% 90% 90% 9% / 50% 50% 50% 50% ;
+    transform: skew(-30deg, 0deg) rotate(18deg);
+}
+.pierna:last-child .pezunia::before, .pierna:last-child .pezunia::after{
+    border-radius: 10% 90% 90% 9% / 50% 50% 50% 50% ;
+}
+.pierna:last-child .pezunia::before{
+    left: unset;
+    right: 14px;
+}
+.pierna:last-child .pezunia::after{
+    left: unset;
+    right: 28px;
 }
