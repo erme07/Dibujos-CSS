@@ -7,6 +7,7 @@
     --colorPelo: #6c6a5a;
     --colorPeloClaro: #e7e0ac;
     --colorGarra: #313853;
+    --colorHoja: #3b7e0c;
 }
 body{
     height: 100vh;
@@ -21,6 +22,59 @@ body{
     height: 440px;
     margin-top: 78px;
     position: relative;
+}
+.trebol{
+    position: absolute;
+    left: 101px;
+    width: 100px;
+    z-index: 2;
+}
+.hoja, .hoja:last-child{
+    background-color: var(--colorHoja);
+    border: 2px solid black;
+    width: 45px;
+}
+.hoja{
+    position: absolute;
+    right: 0;
+    height: 27px;
+    border-radius: 61% 33% 28% 59% / 27% 34% 56% 67%  ;
+    border-left: none;
+    z-index: 1;
+}
+.hoja:last-child{
+    position: absolute;
+    top: 2px;
+    left: 12px;
+    height: 25px;
+    transform: skew(32deg, -9deg);
+    border-right: none;
+    border-radius: 16% 83% 48% 28% / 0% 46% 49% 56%;
+    z-index: 0;
+}
+.hoja:last-child::before{
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -7px;
+    width: 3px;
+    height: 5px;
+    background-color: #1e4403;
+    transform: rotate(10deg) skew(0deg, -15deg);
+    border: 2px solid black;
+    border-radius: 50% 50% 100% 0% / 100% 100% 0% 0%;
+}
+.tallo{
+    position: absolute;
+    top: -32px;
+    left: 50px;
+    background-color: var(--colorHoja);
+    transform: skew(-5deg, -25deg);
+    border: 2px solid black;
+    border-bottom: none;
+    width: 10px;
+    height: 40px;
+    z-index: 2;
 }
 .cabeza{
     position: absolute;
@@ -71,7 +125,7 @@ body{
 }
 .cara{
     position: absolute;
-    top: 0;
+    top: -10px;
     left: 0;
     width: 100%;
     height: 150px;
@@ -93,16 +147,16 @@ body{
 .ojo::before{
     content: "";
     position: absolute;
-    top: 8px;
-    left: 8px;
-    width: 15px;
-    height: 15px;
+    top: 9px;
+    left: 9px;
+    width: 12px;
+    height: 12px;
     background-color: black;
     border-radius: 50%;
 }
 .nariz{
-    width: 35px;
-    height: 8px;
+    width: 38px;
+    height: 12px;
     background-color: var(--colorGarra);
     border: 2px solid black;
     border-radius: 50% 50% 50% 50% / 25% 25% 75% 75% ;
@@ -116,21 +170,36 @@ body{
 }
 .nariz::before{
     top: -10px;
-    left: -10px;
+    left: -9px;
     width: 50px;
     height: 10px;
 }
 .nariz::after{
-    bottom: -45px;
+    bottom: -50px;
     left: 9px;
-    width: 11px;
+    width: 9px;
     height: 6px;
     transform: rotate(-16deg);
 }
-
+.fosa, .fosa::before{
+    position: absolute;
+    width: 8px;
+    height: 5px;
+    background-color: black;
+    border-radius: 50% 50% 30% 30% / 75% 75% 20% 20%;
+}
+.fosa{
+    top: 3px;
+    left: 4px;
+}
+.fosa::before{
+    content: "";
+    top: 0px;
+    left: 18px;
+}
 .bigote{
     position: absolute;
-    top: 90px;
+    top: 80px;
     left: 0px;
     width: 65px;
     height: 10px;
@@ -382,3 +451,5 @@ body{
     left: unset;
     right: 28px;
 }
+
+
