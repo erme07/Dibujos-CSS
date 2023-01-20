@@ -15,14 +15,13 @@ body{
     justify-content: center;
     height: 100vh;
     background-color: antiquewhite;
-    background: linear-gradient(0deg, rgba(0,0,0,1) 25%, rgba(130,18,11,1) 50%, rgba(0,0,0,1) 75%);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 15%, rgba(130,18,11,1) 50%, rgba(0,0,0,1) 85%);
 }
 .tripulante{
     width: 200px;
     height: 340px;
     position: relative;
     margin-left: 50px;
-    transform: scale(.7);
 }
 
 .cuerpo{
