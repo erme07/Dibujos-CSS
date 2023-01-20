@@ -22,31 +22,28 @@ body{
     transition: transform .5s;
     
 }
-
-.pokebola::before{
+.pokebola::before, .pokebola::after{
     content: "";
     position: absolute;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+.pokebola::before{
     bottom: -130px;
     left: -90px;
     width: 450px;
     height: 309px;
-    background-color: #ffffff;
     border-top: 50px solid black;
     border-left: 40px solid black;
     border-right: 40px solid black;
-    border-radius: 50%;
     box-shadow: inset 50px -115px 20px 50px #bdbdbd;
     z-index: 2;
 }
 .pokebola::after{
-    content: "";
-    position: absolute;
     width: 30px;
     height: 50px;
     top: 45px;
     left: 60px;
-    background-color: white;
-    border-radius: 50%;
     transform: rotate(45deg);
     box-shadow: 0px 0px 11px 11px #ffffff;
 }
@@ -60,26 +57,25 @@ body{
     right: 70px;
     z-index: 3;
 }
-.boton::before{
+.boton::before, .boton::after{
     content: "";
+    position: absolute;
+    border-radius: 50%;
+}
+.boton::before{
+    top: 15px;
+    right: 15px;
     width: 80px;
     height: 80px;
     background-color: rgb(255, 255, 255);
-    border-radius: 50%;
-    position: absolute;
-    top: 15px;
-    right: 15px;
 }
 .boton::after{
-    content: "";
+    top: 27px;
+    right: 27px;
     width: 50px;
     height: 50px;
     background-color: transparent;
     border: 2px solid black;
-    border-radius: 50%;
-    position: absolute;
-    top: 27px;
-    right: 27px;
 }
 .pokebola:hover .boton::after{
     animation: parpadeo 1s infinite;
