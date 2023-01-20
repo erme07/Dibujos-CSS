@@ -8,4 +8,4 @@ Este repositorio incluye todas mis practicas de CSS, enfocado al diseño de figu
 - Calabaza de Halloween
 
 ### Preview
-![Preview de algunos dibujos dentro del repositorio](https://raw.githubusercontent.com/erme07/Dibujos-CSS/master/preview.jpg)
+![Preview de algunos dibujos dentro del repositorio](https://erme07.github.io/Dibujos-CSS/preview.jpg)
