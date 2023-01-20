@@ -2,10 +2,10 @@
 
 Este repositorio incluye todas mis practicas de CSS, enfocado al diseño de figuras y dibujos de objetos o personajes de la cultura popular
 
-- [Totoro](https://erme07.github.io/Dibujos-CSS/totoro)
-- [Pokebola](https://erme07.github.io/Dibujos-CSS/pokebola)
-- [Personaje Among us](https://erme07.github.io/Dibujos-CSS/among-us)
-- [Calabaza de Halloween](https://erme07.github.io/Dibujos-CSS/calabaza-halloween)
+- [Totoro](https://erme07.github.io/Dibujos-CSS/totoro/totoro.html)
+- [Pokebola](https://erme07.github.io/Dibujos-CSS/pokebola/pokebola.html)
+- [Personaje Among us](https://erme07.github.io/Dibujos-CSS/among%20us/amongus.html)
+- [Calabaza de Halloween](https://erme07.github.io/Dibujos-CSS/calabaza%20halloween/calabaza.html)
 
 ### Preview
 ![Preview de algunos dibujos dentro del repositorio](https://erme07.github.io/Dibujos-CSS/preview.jpg)
