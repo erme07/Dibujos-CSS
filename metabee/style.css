@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --mainColor:#df9b36;
+    --secondColor: #d9e5e9;
+    --secondColorShadow: #738e91;
+}
+body{
+    margin: 50px;
+}
+.cadera{
+    position: absolute;
+    top:200px;
+    left:200px;
+}
+.frente{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    border: 2px solid black;
+    border-radius: 10px;
+    border-top-left-radius: 30px;
+    transform: rotate(45deg);
+    background-color: var(--secondColor);
+    background: linear-gradient(45deg, rgba(217,229,233,1) 45%, rgba(115,142,145,1) 65%);
+    box-shadow: inset -2px -2px 2px 0px var(--secondColor), inset -4px -3px 4px 0px var(--secondColorShadow);
+}
+.frente__izq{
+    position: absolute;
+    top: 8px;
+    left: -11px;
+    width: 62px;
+    height: 62px;
+    border-left: 2px solid black;
+    background-color: var(--secondColor);
+    border-radius: 10px;
+    transform: rotate(-20deg);
+    box-shadow: inset 1px -2px 2px 1px var(--secondColor), inset 7px 0px 4px -3px var(--secondColorShadow);
+}
+.frente__der{
+    position: absolute;
+    top: -11px;
+    left: 8px;
+    width: 62px;
+    height: 62px;
+    border-top: 2px solid black;
+    background-color: var(--secondColor);
+    border-radius: 10px;
+    transform: rotate(20deg);
+    background: linear-gradient(25deg, rgba(217,229,233,1) 25%, rgba(115,142,145,1) 65%);
+    box-shadow: inset 0px 3px 2px -2px var(--secondColor), inset 0px 3px 4px 0px var(--secondColorShadow);
+}
+.frente__sup{
+    position: absolute;
+    top: -15px;
+    left: -3px;
+    width: 40px;
+    height: 64px;
+    border-left: 2px solid black;
+    background-color: var(--secondColor);
+    transform: rotate(45deg);
+    border-radius: 10px;
+    z-index: 1;
+    background: linear-gradient(0deg, rgba(217,229,233,1) 45%, rgba(115,142,145,1) 65%);
+    box-shadow: inset 4px -2px 2px -2px var(--secondColor), inset 8px 0px 4px -4px var(--secondColorShadow);
+}
+.frente__detalles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+}
+
+.frente__circulo{
+    position: absolute;
+    top: 0;
+    left: 8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+    box-shadow: inset 0px -10px 4px -4px var(--secondColorShadow), 0px 3px 2px 0px var(--secondColorShadow);
+    background-color: var(--secondColor);
+}
+.frente__circulo--segundo{
+    left: unset;
+    right: 8px;
+}
+.frente__barra{
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    width: 60px;
+    height: 13px;
+    border-radius: 8px;
+    border: 1px solid black;
+    box-shadow: inset 0px -4px 3px 0px var(--secondColorShadow), 0px 3px 2px 0px var(--secondColorShadow);
+    background-color: var(--secondColor);
+}
+.frente__barra--segunda{
+    top: 50px;
+    left: 20px;
+    width: 40px;
+}
