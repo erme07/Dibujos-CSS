@@ -5,6 +5,7 @@
 }
 :root{
     --mainColor:#df9b36;
+    --mainColorDark:#9f6940;
     --secondColor: #d9e5e9;
     --secondColorShadow: #738e91;
 }
@@ -107,4 +108,76 @@ body{
     top: 50px;
     left: 20px;
     width: 40px;
+}
+.lateral{
+    position: absolute;
+    top: -13px;
+    left: -36px;
+    width: 45px;
+    height: 48px;
+    overflow: hidden;
+    border: 2px solid black;
+    border-bottom: none;
+    background-color: var(--mainColor);
+    transform: skew(0deg, -27deg) rotate(39deg);
+    border-radius: 5px 8px 0px 26px;
+    box-shadow: inset 4px 0px 4px 0px white;
+    z-index: -1;
+}
+
+.lateral::before{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 38px;
+    transform: rotate(60deg) skew(0deg, -36deg);
+    height: 19px;
+    border-radius: 3px 0px;
+    box-shadow: -11px -16px 0px 10px #9f6940bb;
+}
+.lateral__inf{
+    position: absolute;
+    top: 29px;
+    left: 2px;
+    width: 50px;
+    height: 23px;
+    background-color: #9f6940;
+    transform: rotate(12deg);
+    border: 2px solid black;
+    border-radius: 33% 20% 10% 89% / 19% 0% 10% 80%;
+    z-index: 1;
+}
+.lateral--segundo{
+    transform: scaleX(-1) skew(0deg, -27deg) rotate(39deg);
+    left:unset;
+    right: -115px;
+}
+
+.detras{
+    position: absolute;
+    left: -5px;
+    top: 30px;
+    width: 90px;
+    height: 90px;
+    border: 2px solid black;
+    border-top: none;
+    border-left: none;
+    border-radius: 9px 30px;
+    background-color: var(--mainColorDark);
+    transform: rotate(45deg) skew(-2deg, -2deg);
+    z-index: -1;
+}
+.detras::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 80px;
+    height: 80px;
+    background-color: var(--mainColorDark);
+    border: 2px solid black;
+    border-top: none;
+    border-left: none;
+    border-radius: 9px 30px;
 }
