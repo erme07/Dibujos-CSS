@@ -1,6 +1,6 @@
 # Dibujos hechos con CSS
 
-Este repositorio incluye todas mis practicas de CSS, enfocado al diseño de figuras y dibujos de objetos o personajes de la cultura popular
+Este repositorio incluye practicas de CSS enfocadas en el diseño de figuras y dibujos de objetos o personajes de la cultura popular. El fin es Aplicar y perfeccionar el uso de propiedades como border-radius, box-shadow, transform, etc.
 
 ### Lista de dibujos
 - [Totoro](https://erme07.github.io/Dibujos-CSS/totoro/totoro.html)
