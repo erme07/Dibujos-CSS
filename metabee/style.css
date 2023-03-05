@@ -8,9 +8,18 @@
     --mainColorDark:#9f6940;
     --secondColor: #d9e5e9;
     --secondColorShadow: #738e91;
+    --bodyColor:#c3c6d9;
+    --bodyColorShadow:#838baf;
 }
 body{
     margin: 50px;
+}
+.base{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 460px;
+    background-color: aquamarine;
 }
 .cadera{
     position: absolute;
@@ -111,7 +120,7 @@ body{
 }
 .lateral{
     position: absolute;
-    top: -13px;
+    top: -10px;
     left: -36px;
     width: 45px;
     height: 48px;
@@ -157,16 +166,16 @@ body{
 .detras{
     position: absolute;
     left: -5px;
-    top: 30px;
-    width: 90px;
-    height: 90px;
+    top: 20px;
+    width: 87px;
+    height: 87px;
     border: 2px solid black;
     border-top: none;
     border-left: none;
     border-radius: 9px 30px;
     background-color: var(--mainColorDark);
-    transform: rotate(45deg) skew(-2deg, -2deg);
-    z-index: -1;
+    transform: rotate(45deg);
+    z-index: -2;
 }
 .detras::before{
     content: "";
@@ -180,4 +189,102 @@ body{
     border-top: none;
     border-left: none;
     border-radius: 9px 30px;
+}
+.pierna{
+    position: absolute;
+    z-index: -1;
+}
+.pierna__sup{
+    position: absolute;
+    top: 35px;
+    left: -41px;
+    width: 50px;
+    height: 81px;
+    border: 2px solid black;
+    border-radius: 20% 0% 75% 35% / 50% 50% 50% 45%;
+    background-color: var(--bodyColor);
+    transform: rotate(15deg) skew(0deg, 20deg);
+    box-shadow: inset -7px 8px 6px 4px var(--bodyColorShadow);
+}
+.pierna__sup::before{
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -1px;
+    width: 5px;
+    height: 8px;
+    background-color: black;
+    border-radius: 32% 0% 0% 100% / 27% 0% 0% 61%;
+    transform: rotate(10deg) skew(-9deg, -10deg);
+}
+.pierna__sup::after{
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: -8px;
+    width: 28px;
+    height: 41px;
+    border: 2px solid black;
+    border-right: none;
+    border-top: none;
+    border-radius: 0px 9px;
+    /* background-color: #c2c5d8; */
+    transform: rotate(23deg) skew(13deg, 20deg);
+    box-shadow: inset 1px -33px 0px 0px #c2c5d8;
+}
+.pierna__inf{
+    position: absolute;
+    top: 107px;
+    left: -58px;
+    width: 50px;
+    height: 80px;
+    border: 2px solid black;
+    transform: rotate(12deg);
+    background-color: var(--mainColor);
+}
+
+/* .inf__left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 100% 0% 0% 0% / 100% 0% 0% 0% ;
+} */
+.pie{
+    position: absolute;
+    top: 76px;
+    left: -2px;
+    width: 50px;
+    height: 70px;
+    border: 2px solid black;
+    border-left: none;
+    border-right: none;
+    /* transform: rotate(12deg); */
+    background-color: var(--mainColorDark);
+}
+.pie_a{
+    position: absolute;
+    top: 22px;
+    left: 9px;
+    /* background-color: #9f6940; */
+    border: 2px solid black;
+    border-left: none;
+    border-bottom: none;
+    width: 72px;
+    height: 30px;
+    transform: rotate(75deg);
+}
+.pie_b{
+    position: absolute;
+    top: 24px;
+    left: -24px;
+    /* background-color: #9f6940; */
+    border: 2px solid black;
+    border-right: none;
+    border-bottom: none;
+    width: 48px;
+    height: 18px;
+    transform: rotate(-75deg) skew(-47deg, 0deg);
 }
