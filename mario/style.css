@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --colorMain: #ff1317;
+  --colorSkin: #f7bc90;
+  --colorHair: #6a2305;
+  --colorEyes: #2784d0;
+}
