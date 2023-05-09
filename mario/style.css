@@ -9,3 +9,62 @@
   --colorHair: #6a2305;
   --colorEyes: #2784d0;
 }
+.mario {
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; */
+  width: 250px;
+  margin: 50px auto;
+  position: relative;
+}
+.gorra {
+  width: 250px;
+  height: 160px;
+  background-color: var(--colorMain);
+  border-radius: 50% 50% 12% 12% / 82% 82% 17% 18%;
+  border: 2px solid black;
+  position: relative;
+}
+.visera {
+  width: 206px;
+  height: 65px;
+  background-color: var(--colorMain);
+  border: 2px solid black;
+  border-radius: 50% 50% 4% 4% / 80% 80% 16% 16%;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+}
+.logo {
+  width: 90px;
+  height: 75px;
+  background-color: white;
+  border: 2px solid black;
+  position: absolute;
+  top: 32px;
+  left: 77px;
+  border-radius: 50%;
+}
+
+.cabeza {
+  background-color: var(--colorSkin);
+  width: 220px;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: -45px;
+  position: relative;
+  border-radius: 45% 45% 50% 50% / 42% 42% 50% 50%;
+  border: 2px solid black;
+}
+.menton {
+  background-color: var(--colorSkin);
+  width: 65px;
+  height: 20px;
+  border: 2px solid black;
+  border-top: none;
+  border-radius: 50% 50% 50% 50% / 0% 0% 100% 100%;
+  position: absolute;
+  bottom: -9px;
+  left: 75px;
+}
