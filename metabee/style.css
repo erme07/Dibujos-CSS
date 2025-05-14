@@ -121,14 +121,14 @@ body{
 .lateral{
     position: absolute;
     top: -10px;
-    left: -36px;
+    left: -33px;
     width: 45px;
     height: 48px;
     overflow: hidden;
     border: 2px solid black;
     border-bottom: none;
     background-color: var(--mainColor);
-    transform: skew(0deg, -27deg) rotate(39deg);
+    transform: skew(325deg, 10deg) rotate(5deg);
     border-radius: 5px 8px 0px 26px;
     box-shadow: inset 4px 0px 4px 0px white;
     z-index: -1;
@@ -147,13 +147,13 @@ body{
 }
 .lateral__inf{
     position: absolute;
-    top: 29px;
-    left: 2px;
+    top: 30px;
+    left: 0px;
     width: 50px;
-    height: 23px;
+    height: 20px;
     background-color: #9f6940;
-    transform: rotate(12deg);
-    border: 2px solid black;
+    transform: rotate(15deg);
+    border: 1px solid black;
     border-radius: 33% 20% 10% 89% / 19% 0% 10% 80%;
     z-index: 1;
 }
@@ -196,14 +196,14 @@ body{
 }
 .pierna__sup{
     position: absolute;
-    top: 35px;
-    left: -41px;
-    width: 50px;
+    top: 33px;
+    left: -45px;
+    width: 52px;
     height: 81px;
     border: 2px solid black;
     border-radius: 20% 0% 75% 35% / 50% 50% 50% 45%;
     background-color: var(--bodyColor);
-    transform: rotate(15deg) skew(0deg, 20deg);
+    transform: rotate(18deg) skew(0deg, 20deg);
     box-shadow: inset -7px 8px 6px 4px var(--bodyColorShadow);
 }
 .pierna__sup::before{
@@ -234,12 +234,12 @@ body{
 }
 .pierna__inf{
     position: absolute;
-    top: 107px;
-    left: -58px;
+    top: 101px;
+    left: -66px;
     width: 50px;
     height: 80px;
     border: 2px solid black;
-    transform: rotate(12deg);
+    transform: rotate(17deg);
     background-color: var(--mainColor);
 }
 
